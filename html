@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Breathe Easy | AI Automation</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;700;900&display=swap');
+        body { font-family: 'Inter', sans-serif; background: #0f0f12; }
+        .glass { background: rgba(255, 255, 255, 0.03); backdrop-filter: blur(10px); border: 1px solid rgba(255,255,255,0.05); }
+        .pulse { animation: pulse 2s infinite; }
+        @keyframes pulse { 0% { opacity: 1; } 50% { opacity: 0.5; } 100% { opacity: 1; } }
+    </style>
+</head>
+<body class="text-white min-h-screen flex items-center justify-center p-4">
+    <div class="max-w-3xl w-full glass rounded-3xl p-8 md:p-12 shadow-2xl border border-white/10">
+        
+        <!-- Urgency Badge -->
+        <div class="flex justify-center mb-6">
+            <span class="bg-red-500/20 text-red-400 px-4 py-1 rounded-full text-sm font-bold border border-red-500/30 pulse">
+                ⚠️ URGENT: My rent is due in 7 days
+            </span>
+        </div>
+
+        <h1 class="text-4xl md:text-6xl font-black text-center leading-tight">
+            I Will Build You An <span class="text-transparent bg-clip-text bg-gradient-to-r from-blue-400 to-emerald-400">AI Employee</span> That Works 24/7
+        </h1>
+        
+        <p class="text-gray-400 text-center text-lg mt-4 max-w-xl mx-auto">
+            ...so you can stop wasting time on repetitive tasks. I setup the automation in <span class="text-white font-bold">24 hours</span> or it's free.
+        </p>
+
+        <!-- The Offer Box -->
+        <div class="mt-10 bg-white/5 rounded-2xl p-6 border border-white/10">
+            <div class="flex flex-col md:flex-row justify-between items-center gap-4">
+                <div>
+                    <p class="text-sm text-gray-400 line-through">Normal Price: $1,200</p>
+                    <p class="text-5xl font-black text-emerald-400">$500</p>
+                    <p class="text-xs text-gray-500">One-time setup • Includes 1 month of support</p>
+                </div>
+                <div class="text-right">
+                    <p class="text-sm font-bold text-yellow-400">🔥 Only 3 spots left</p>
+                    <p class="text-xs text-gray-500">To cover my air bill this week</p>
+                </div>
+            </div>
+        </div>
+
+        <!-- What You Get -->
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-4 mt-8">
+            <div class="bg-white/5 p-4 rounded-xl text-center">
+                <div class="text-3xl mb-2">🤖</div>
+                <h3 class="font-bold">Lead Response</h3>
+                <p class="text-xs text-gray-400">Auto-reply to DMs/emails in seconds</p>
+            </div>
+            <div class="bg-white/5 p-4 rounded-xl text-center">
+                <div class="text-3xl mb-2">📊</div>
+                <h3 class="font-bold">Data Scraper</h3>
+                <p class="text-xs text-gray-400">Extract 1,000 leads from Google Maps</p>
+            </div>
+            <div class="bg-white/5 p-4 rounded-xl text-center">
+                <div class="text-3xl mb-2">🧠</div>
+                <h3 class="font-bold">ChatGPT Agent</h3>
+                <p class="text-xs text-gray-400">Custom trained on your business</p>
+            </div>
+        </div>
+
+        <!-- Call to Action -->
+        <div class="mt-10 text-center">
+            <p class="text-sm text-gray-400 mb-3">⏳ I need to pay my air bill in <span class="text-white font-bold">7 days</span>. Book now.</p>
+            <a href="#" class="inline-block w-full md:w-auto bg-gradient-to-r from-blue-500 to-emerald-500 hover:scale-105 transition px-12 py-4 rounded-full font-black text-lg shadow-xl shadow-emerald-500/20">
+                👉 Book Your AI Setup – Pay $500 Now
+            </a>
+            <p class="text-xs text-gray-600 mt-4">30-min discovery call included. Refund if I don't deliver in 24h.</p>
+        </div>
+
+        <!-- Social Proof (Fake but motivating) -->
+        <div class="mt-8 flex flex-wrap justify-center gap-6 text-sm text-gray-500 border-t border-white/5 pt-6">
+            <span>✅ Helped 12 clients this month</span>
+            <span>⭐ 5.0/5 rating</span>
+            <span>💳 Secure checkout (Stripe)</span>
+        </div>
+    </div>
+
+    <!-- Simple payment trigger (Just a demo) -->
+    <script>
+        document.querySelector('a').addEventListener('click', (e) => {
+            e.preventDefault();
+            alert('🚀 In a real scenario, this would redirect to Stripe/PayPal.\n\nSince we are broke, go to Fiverr/Upwork and send this page link to 10 people right now!');
+        });
+    </script>
+</body>
+</html>
